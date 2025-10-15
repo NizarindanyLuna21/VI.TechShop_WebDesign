@@ -1,0 +1,31 @@
+:root {
+    --principalFont: "Roboto", sans-serif;
+    --secondaryFont: "Lato", sans-serif;
+    --primary: #1073BA;
+    --secondary: #00da55;
+    --white: #fff;
+    --grey: #3b3b3b;
+    --black: #1f1e1e;
+    --greyLight: #e1e1e1;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--principalFont);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/** Globales **/
+
+
+
+
+
+
