@@ -12,5 +12,90 @@
 </head>
 <body>
     
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="imagen-header">
+                <picture>
+                    <source 
+                        sizes="1920w"
+                        srcset="img/header.avif 1920w"
+                        type="image/avif">
+                    <source 
+                        sizes="1920w"
+                        srcset="img/header.webp 1920w" 
+                        type="image/webp">
+                    <source 
+                        sizes="1920w"
+                        srcset="img/header.jpg 1920w" 
+                        type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="img/header.jpg" alt="imagen header" width="1000" height="600">
+                </picture>
+            </div> <!-- .imagen header -->
+
+            <div class="texto-header">
+                <p class="textBold tag-producto">Sonido Profesional</p>
+                <h1 class="degradado">TechPRO</h1>
+                <p class="descripcion-texto texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Culpa, maiores. Velit praesentium magnam excepturi numquam reiciendis ipsa doloremque!
+                </p>
+                <p class="texto precio-producto">
+                    Desde <span class="precio">$299</span>
+                </p>
+            </div> 
+        </div> <!-- .header -->
+    </header>
+
+    <section class="contenedor">
+        <div class="contenido-section">
+            <div class="icono">
+                <img src="img/icono-sonido.svg" alt="sonido imagen">
+                <h3>Gran sonido</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius aut laudantium nemo nisi? Harum fuga, exercitationem similique quia officiis eum et aspernatur, at eligendi sequi doloremque ipsum enim quod dolorum.</p>
+            </div>
+            <div class="icono">
+                <img src="img/icono-garantia.svg" alt="sonido imagen">
+                <h3>Garantia de por vida</h3>
+                <p>Adipisicing elit. Quisquam, rerum magnam eum nesciunt perferendis quaerat nisi, beatae voluptate necessitatibus recusandae velit error veniam dolor unde harum, cupiditate soluta quo. Architecto?</p>
+            </div>
+            <div class="icono">
+                <img src="img/icono-bateria.svg" alt="sonido imagen">
+                <h3>+20 horas de bateria</h3>
+                <p>Dolor sit amet consectetur, adipisicing elit. Quisquam, rerum magnam eum nesciunt perferendis quaerat nisi, beatae voluptate necessitatibus recusandae velit error veniam dolor unde harum, cupiditate soluta quo. Architecto?</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-tech">
+        <div class="contenedor contenido-tech">
+            <div class="contenido-texto">
+                <h2>Sobre los <span>TechPRO</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Aspernatur quos perspiciatis rerum. Maxime ad, voluptates
+                libero magnam unde quisquam, at possimus dolorem quas quibusdam dicta,
+                adipisci explicabo provident voluptate et.</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="contenedor section-tech">
+        <h2 class='textCenter degradado header-opciones'>Elige tusTechPRO</h2>
+        <div class="tech-contenedor">
+            <div class="tech-opcion opcion-x">
+                <h3>TechPRO X</h3>
+                <p class="precio">$299</p>
+            </div>
+
+            <div class="tech-opcion opcion-y">
+                <h3>TechPRO Y</h3>
+                <p class="precio">$399</p>
+            </div>
+
+            <div class="tech-opcion opcion-z">
+                <h3>TechPRO Z</h3>
+                <p class="precio">$599</p>
+            </div>
+        </div>
+    </main>
+    
 </body>
 </html>
