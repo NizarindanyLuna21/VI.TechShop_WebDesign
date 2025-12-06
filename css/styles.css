@@ -104,7 +104,7 @@ img {
     }
 }
 
-/*      - Section */
+/*Seccion - Iconos*/
 @media (min-width: 768px) {
     .contenido-section {
         grid-template-columns: repeat(3, 1fr);
@@ -137,7 +137,7 @@ img {
     text-transform: uppercase;
 }
 
-/*      - Section2*/
+/* Section - Sobre Tech*/
 .sobre-tech {
     background-image: linear-gradient(to bottom, transparent 50%, var(--primary) 0%), url(../img/imagen-mujer.avif);
     background-position: right;
@@ -169,7 +169,6 @@ img {
 
     .contenido-texto {
         grid-row: 1/2;
-        /* padding-left: calc(var(--separation)*2); */
         padding-right: var(--separation);
     }
 }
@@ -181,7 +180,7 @@ img {
     font-weight: bold;
 }
 
-/*  Seccion opcion Audifonos*/
+/*  Seccion - Opcion Audifonos*/
 .section-tech {
     padding: var(--separation) 0;
 }
@@ -213,7 +212,7 @@ img {
     justify-content: center;
     background-position: 90% center;
     background-size: 15rem;
-    transition-duration: .3s;
+    transition-duration: .3s;   /*Animacion*/
     transition-property: transform background-size;
 }
 .tech-opcion:hover { 
@@ -267,7 +266,68 @@ img {
     }
 }
 
+/* Seccion - Newsletter*/
+.newsletter {
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white)0%), url(../img/newsletter.avif);
+    background-position: top center;
+    background-repeat: repeat, no-repeat;
+    background-size: 100%, 70rem;
+    margin-bottom: 3rem;
+    padding: 10rem 0;
+}
+.contenido-newsletter {
+    display: grid;
+    grid-template-rows: repeat(2, 30rem);
+    gap: var(--separation);
+}
+.texto-newsletter {
+    grid-row: 2/3;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .newsletter {
+        background-image: linear-gradient(to right, transparent 50%, var(--white)0%), url(../img/newsletter.avif);
+        background-position: left center;
+        background-repeat: repeat, no-repeat;
+        background-size: 100%, 100rem;
+    }
+    .contenido-newsletter {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 6rem;
+    }
+    .texto-newsletter {
+        grid-column: 2/3;
+    }
 
+}
+.input, input[type="text"] {
+    width: 100%;
+}
+input[type="text"] {
+    padding: 1rem;
+}
+#btnInscribir {
+    background-color: var(--primary);
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+    width: 100%;
+}
 
-
-
+/* Seccion - Footer*/
+.footer{
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: var(--secondaryFont);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
